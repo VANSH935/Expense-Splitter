@@ -1,0 +1,215 @@
+/* Center nav items and add spacing */
+
+
+/* ---------------- NAVBAR LOGO ---------------- */
+.nav-logo {
+  height: 160px;   /* Adjust size as needed */
+ 
+}
+.header{
+    background-color: #f4f6f8;
+}
+@media(max-width: 768px) {
+  .nav-logo {
+    height: 38px; /* Smaller for mobile */
+  }
+}
+
+/* Aligning text nicely beside logo */
+.navbar-brand {
+  font-size: 1.7rem;
+}
+
+.navbar {
+  padding: 12px 0;
+}
+
+.navbar {
+    border-radius: 20px;
+}
+
+
+
+/* Prevents logo and buttons from squeezing too tight on small screens */
+@media (max-width: 992px) {
+  .ms-auto {
+    margin-top: 12px;
+  }
+}
+
+
+
+/* ---------------- FOOTER LOGO ---------------- */
+.footer-logo {
+  height: 100px;
+  width: auto;
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+
+/* Center elements more visually balanced */
+.footer-section .row {
+  align-items: center;
+}
+
+/* Improve readability */
+.nav-link {
+    font-weight: 500;
+}
+
+
+
+/* Optional smooth animation */
+#mainNav {
+    transition: 0.3s ease-in-out;
+}
+/* Hero slide styling */
+.hero-slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Black overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+/* Center text */
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Text styling */
+.carousel-caption h1,
+.carousel-caption p {
+    z-index: 2;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Make button stand out */
+.carousel-caption .btn {
+    font-size: 18px;
+}
+
+/* Indicator custom spacing */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.second-section p {
+    font-size: 2.8rem;
+    line-height: 1.4;
+
+}
+
+.second-section {
+    background-color: #eaeaeb;
+    height: 750px;
+    padding: 100px;
+    bottom: 20px;
+
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    line-height: 2.1;
+    font-size: 24px;
+}
+
+.feature-list li {
+    margin-bottom: 8px;
+}
+
+#featureCarousel img {
+    object-fit: cover;
+    height: 350px;
+}
+
+@media (max-width: 768px) {
+    #featureCarousel img {
+        height: 250px;
+    }
+}
+
+
+
+.about-section {
+    background-color: #eaeaeb;
+}
+
+.about-title {
+    color: #1a1a1a;
+    font-size: 2.4rem;
+}
+
+/* Premium content card */
+.about-card {
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(17, 45, 78, 0.06);
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #424242;
+}
+
+/* Slight emphasis on key words (optional) */
+.about-text strong {
+    color: #112d4e;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 1.9rem;
+    }
+
+    .about-card {
+        padding: 1.8rem !important;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+.footer-section {
+    height: 60px;
+    background-color: #697179; /* Similar to the screenshot */
+    color: #f1f1f1;
+    margin-top: 20px;
+}
+
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-links div h3 {
+    font-size: 1.1rem;
+    color: #eaeae9;
+    font-weight: 600;
+}

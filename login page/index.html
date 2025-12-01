@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Expense Splitter</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Animated Glow Balls -->
+    <div class="glow"></div>
+    <div class="glow glow2"></div>
+
+    <!-- Login Container -->
+    <div class="login-wrapper">
+
+        <!-- Logo -->
+        <img src="img/logo.png" alt="Logo" class="logo">
+
+        <!-- Card -->
+        <div class="card">
+
+            <h2 class="title">Welcome Back 👋</h2>
+            <p class="subtitle">Login to continue</p>
+
+            <form id="loginForm" novalidate>
+
+                <!-- Email -->
+                <input type="email" id="email" class="input" placeholder="Email Address">
+                <small class="error"></small>
+
+                <!-- Password -->
+                <input type="password" id="password" class="input" placeholder="Password">
+                <small class="error"></small>
+
+                <!-- Forgot -->
+                <a href="#" class="forgot">Forgot Password?</a>
+
+                <!-- Checkbox -->
+                <label class="checkbox">
+                    <input type="checkbox" id="verify"> Verify you are human
+                </label>
+                <small class="error"></small>
+
+                <!-- Button -->
+                <button type="submit" class="btn-primary">Login</button>
+
+                <div class="divider">or</div>
+
+                <!-- Google -->
+                <button type="button" class="btn-google">
+                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+                    Continue with Google
+                </button>
+
+                <p class="terms">
+                    By signing up, you accept our <a href="#">Terms of Service.</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
