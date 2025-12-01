@@ -1,0 +1,160 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #98bdf4;
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+    margin: auto;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin: 20px auto 30px;
+    display: block;
+    animation: fadeIn 1s;
+}
+
+/* Card */
+.card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.07);
+    animation: slideUp .6s ease;
+}
+
+/* Typography */
+.subtitle {
+    font-weight: 600;
+    color: #8a8a8a;
+    font-size: .85rem;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 10px 0 25px;
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: all .25s;
+}
+
+.input:focus {
+    border-color: #4ba3ff;
+    box-shadow: 0 0 10px rgba(75,163,255,.3);
+    outline: none;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+    font-size: .9rem;
+}
+
+/* Error Message */
+.error {
+    height: 14px;
+    font-size: 0.8rem;
+    color: #ff3b30;
+    text-align: left;
+}
+
+/* Buttons */
+.btn-primary {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    background: #ff7b32;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    margin-top: 5px;
+    transition: .25s;
+}
+
+.btn-primary:hover {
+    background: #e46a24;
+}
+
+/* Google Button */
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-google img {
+    width: 18px;
+}
+
+/* Divider */
+.divider {
+    margin: 12px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Terms */
+.terms {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideUp {
+    from {transform: translateY(30px); opacity:0;}
+    to {transform: translateY(0); opacity:1;}
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .title { font-size: 1.5rem; }
+}

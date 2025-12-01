@@ -1,0 +1,172 @@
+/* Basic Setup */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+}
+
+/* Background blur image */
+.background {
+    background: url("https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1600&q=80") no-repeat center/cover;
+    position: fixed;
+    inset: 0;
+    filter: blur(10px) brightness(0.7);
+    z-index: -3;
+}
+
+/* Animated Glow Blobs */
+.glow, .glow2 {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(0, 119, 255, 0.4);
+    filter: blur(90px);
+    animation: float 6s infinite alternate ease-in-out;
+}
+.glow2 {
+    background: rgba(255, 123, 0, 0.4);
+    left: 60%;
+    animation-duration: 7s;
+}
+
+/* Floating animation */
+@keyframes float {
+    from { transform: translateY(0px); }
+    to   { transform: translateY(-40px); }
+}
+
+/* Login wrapper */
+.login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    text-align: center;
+    animation: fade 1s ease;
+}
+@keyframes fade {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1;}
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin: 25px auto;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(14px);
+    padding: 35px 28px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.15);
+    animation: softpop 0.6s ease;
+}
+@keyframes softpop {
+    from {transform: scale(0.95); opacity:0;}
+    to {transform: scale(1); opacity:1;}
+}
+
+/* Text */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.subtitle {
+    color: #7b7b7b;
+    margin: 5px 0 25px;
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid #d0d0d0;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    transition: .25s;
+}
+.input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 12px rgba(0,123,255,0.35);
+    outline: none;
+}
+
+/* Error message */
+.error {
+    height: 14px;
+    font-size: .8rem;
+    color: #ff4141;
+    text-align: left;
+    display: block;
+}
+
+/* Forgot link */
+.forgot {
+    color: #007aff;
+    font-size: .9rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0 10px;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Primary Button */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-primary:hover {
+    background: #005fcc;
+    transform: translateY(-2px);
+}
+
+/* Google Button */
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .25s;
+}
+.btn-google:hover {
+    background: #f5f5f5;
+}
+
+/* Divider */
+.divider {
+    color: #777;
+    margin: 12px 0;
+}
+
+/* Terms */
+.terms {
+    font-size: .85rem;
+    margin-top: 12px;
+}
+.terms a {
+    color: #007aff;
+}
