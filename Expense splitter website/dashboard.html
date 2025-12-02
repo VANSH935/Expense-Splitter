@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Splitter</title>
+
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Expense Splitter</h1>
+
+        <!-- PROFILE ICON -->
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" 
+                 class="profile-icon" id="profileIcon">
+
+            <!-- Slide Down Logout -->
+            <div class="logout-box" id="logoutBox">
+                <a href="home.html">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Names Tag Input -->
+        <h3>Names:</h3>
+
+        <div class="tag-input-box">
+            <div id="nameTags"></div>
+            <input type="text" id="nameInput" placeholder="Add names, comma separated">
+        </div>
+
+        <hr>
+
+        <!-- Add Expense -->
+        <h3>Add Expense</h3>
+        <div class="row">
+            <input type="text" id="descInput" placeholder="Description">
+            <select id="payerSelect"></select>
+            <input type="number" id="amountInput" placeholder="Amount">
+            <select id="splitType">
+                <option value="equal">Equally</option>
+            </select>
+        </div>
+        <button onclick="addExpense()">Add Expense</button>
+
+        <hr>
+
+        <!-- Record Payment -->
+        <h3>Record Payment</h3>
+        <div class="row">
+            <select id="payerPaySelect"></select>
+            <select id="receiverSelect"></select>
+            <input type="number" id="payAmount" placeholder="Amount">
+        </div>
+        <button class="teal" onclick="recordPayment()">Record Payment</button>
+
+        <hr>
+
+        <!-- Balances -->
+        <h3>Balances</h3>
+        <div id="balances"></div>
+
+    </div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
