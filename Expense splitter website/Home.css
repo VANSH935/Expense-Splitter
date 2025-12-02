@@ -42,19 +42,22 @@ html {
   }
 }
 .hero-slide {
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   position: relative;
+  top: 5px;
 }
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background-color: rgba(0, 0, 0, 0.2);
+
 }
 .carousel-caption {
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
+  color: #ffffff;
 }
 .carousel-caption p {
   font-size: 18px;
@@ -113,7 +116,7 @@ html {
   color: #112d4e;
 }
 .footer-section {
-  height: 90px; /* fits 80px logo */
+  height: 90px;
   background-color: #697179;
   color: #f1f1f1;
   display: flex;
@@ -126,7 +129,7 @@ html {
   width: 100%;
 }
 .footer-logo {
-  height: 100px;   /* final height */
+  height: 100px;
   opacity: 0.9;
   transition: 0.3s;
 }
@@ -164,4 +167,23 @@ html {
   .footer-right {
     gap: 12px;
   }
+}
+
+
+.second-section {
+  background-color: #eaeaeb;
+  padding: 60px 20px;
+}
+
+.second-section h1 {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 22px;
+  line-height: 1.9;
 }
