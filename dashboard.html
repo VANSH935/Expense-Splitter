@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Splitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg-animation">
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<div class="app">
+    <div class="header">
+        <h1>Expense Splitter</h1>
+        <p class="sub">Smart • Professional • Receipt Scanner</p>
+    </div>
+
+    <div class="container">
+
+        <!-- GROUP -->
+        <h3>Trip / Group Name</h3>
+        <div id="groupNameSection">
+            <input type="text" id="groupNameInput" placeholder="Enter Trip Name">
+            <button onclick="saveGroupName()">Save</button>
+        </div>
+
+        <div id="savedGroupNameBox" style="display:none;">
+            <h2 id="savedGroupName"></h2>
+            <button class="small-btn" onclick="resetTrip()">New Trip</button>
+        </div>
+
+        <hr>
+
+        <!-- MEMBERS -->
+        <h3>Members</h3>
+        <div class="tag-input-box">
+            <div id="nameTags"></div>
+            <input type="text" id="nameInput" placeholder="Add name & press Enter">
+        </div>
+
+        <hr>
+
+        <!-- ADD EXPENSE -->
+        <h3>Add Expense</h3>
+
+        <!-- RECEIPT SCAN -->
+        <div class="receipt-scan">
+            <label class="scan-btn">
+                📷 Scan Receipt
+                <input type="file" id="receiptInput" accept="image/*" hidden>
+            </label>
+            <p id="scanStatus"></p>
+        </div>
+
+        <div class="row">
+            <input type="text" id="descInput" placeholder="Description">
+            <select id="payerSelect">
+                <option disabled selected>Select Payer</option>
+            </select>
+            <input type="number" id="amountInput" placeholder="Amount">
+        </div>
+
+        <button class="glow-btn" onclick="addExpense()">Add Expense</button>
+
+        <hr>
+
+        <!-- EXPENSE LIST -->
+        <h3>Expense Details</h3>
+        <div id="expenseList"></div>
+
+        <hr>
+
+        <!-- SUMMARY -->
+        <h3>Summary (Receipt)</h3>
+        <div id="summaryBox" class="receipt"></div>
+
+    </div>
+</div>
+
+<!-- OCR LIBRARY -->
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>

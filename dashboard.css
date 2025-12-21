@@ -1,0 +1,145 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Segoe UI", sans-serif;
+    background: #0f172a;
+    color: #000;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND BLOBS */
+.bg-animation span {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg,#60a5fa,#a78bfa);
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    animation: float 20s infinite alternate;
+}
+
+.bg-animation span:nth-child(1){top:10%;left:10%}
+.bg-animation span:nth-child(2){top:70%;left:15%}
+.bg-animation span:nth-child(3){top:30%;left:70%}
+.bg-animation span:nth-child(4){top:75%;left:65%}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-120px); }
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    color: #fff;
+}
+
+.sub {
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+/* CONTAINER */
+.container {
+    width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+input, select {
+    width: 95%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 22px;
+    border-radius: 14px;
+    border: none;
+    background: #6366f1;
+    color: white;
+    cursor: pointer;
+}
+
+.small-btn {
+    background: #22c55e;
+}
+
+/* MEMBERS TAG */
+.tag-input-box {
+    background: rgba(255,255,255,0.3);
+    padding: 14px;
+    border-radius: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #c7d2fe;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* RECEIPT SCAN */
+.receipt-scan {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.scan-btn {
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+    padding: 12px 20px;
+    border-radius: 14px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#scanStatus {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* EXPENSE CARD */
+.expense-card {
+    background: rgba(255,255,255,0.25);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* RECEIPT SUMMARY */
+.receipt div {
+    background: #f8fafc;
+    padding: 12px;
+    margin-bottom: 6px;
+    border-left: 5px dashed #6366f1;
+    animation: print 0.3s ease;
+}
+
+@keyframes print {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.glow-btn:hover {
+    box-shadow: 0 0 20px #818cf8;
+    transform: scale(1.05);
+}

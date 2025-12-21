@@ -1,0 +1,20 @@
+DATABASE TABLES NEEDED:
+
+1. users
+   id, name, email, password
+
+2. members
+   id, user_id, member_name
+
+3. expenses
+   id, user_id, description, payer, amount, created_at
+
+4. payments
+   id, user_id, payer, receiver, amount, created_at
+
+WHERE TO ADD SQL:
+
+• When name added → INSERT INTO members
+• When expense added → INSERT INTO expenses
+• When payment recorded → INSERT INTO payments
+• On page load → SELECT members, expenses, payments
